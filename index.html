@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo of Star - Eating Disorder Support</title>
+    
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 引入Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 自定义字体 */
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+        }
+
+        /* 平滑滚动效果 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 自定义马卡龙色系 */
+        .bg-macaron-pink { background-color: #fce7f3; } /* 淡粉色 */
+        .bg-macaron-blue { background-color: #dbeafe; } /* 淡蓝色 */
+        .bg-macaron-green { background-color: #d1fae5; } /* 淡绿色 */
+        .bg-macaron-yellow { background-color: #fef3c7; } /* 淡黄色 */
+        .text-macaron-deep-gray { color: #4b5563; } /* 深灰色文字 */
+        .btn-macaron {
+            background-color: #a5b4fc; /* 淡紫色按钮，更柔和 */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-macaron:hover {
+            background-color: #818cf8; /* 悬停时更深的颜色 */
+        }
+        
+        /* 数据可视化卡片动画 */
+        .data-bar {
+            transition: width 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-macaron-pink text-macaron-deep-gray">
+
+    <!-- 导航栏 -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-500">Echo of Star</a>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#understanding-bed" class="hover:text-indigo-500 transition-colors">Understand Eating Disorder</a></li>
+                <li><a href="#data-discourse" class="hover:text-indigo-500 transition-colors">Data Insights</a></li>
+                <li><a href="#video-story" class="hover:text-indigo-500 transition-colors">Video Story</a></li>
+                <li><a href="#mission" class="hover:text-indigo-500 transition-colors">Where insight meets care</a></li>
+                <li><a href="#help" class="hover:text-indigo-500 transition-colors">Need Help? You're Not Alone</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#understanding-bed" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Understand Eating Disorder</a>
+            <a href="#data-discourse" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Data Insights</a>
+            <a href="#video-story" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Video Story</a>
+            <a href="#mission" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Echo of Star — Where insight meets care</a>
+            <a href="#help" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Need Help? You're Not Alone</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 主视觉区 (Hero Section) -->
+        <section class="container mx-auto px-6 py-20 md:py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight">You are not alone — we hear the echo of the stars</h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-600">
+                Understanding and living with binge eating disorder is a journey. Here, we offer support, knowledge, and a warm, compassionate community.
+            </p>
+            <a href="#understanding-bed" class="mt-8 inline-block btn-macaron font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform">
+                Learn More
+            </a>
+        </section>
+
+        <!-- What is Eating Disorder (Understanding BED Section) -->
+        <section id="understanding-bed" class="bg-macaron-blue py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">What is Eating Disorder</h2>
+                    <p class="mt-2 text-gray-600">Scientific understanding is the first step toward healing</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 卡片 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-macaron-green p-4 rounded-full mb-4">
+                            <svg class="w-10 h-10 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Understand Eating Disorder</h3>
+                        <p class="text-gray-600">Eating Disorder is an eating disorder characterized by consuming unusually large amounts of food in a short period of time, often accompanied by a sense of loss of control.</p>
+                    </div>
+                    <!-- 卡片 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-macaron-yellow p-4 rounded-full mb-4">
+                            <svg class="w-10 h-10 text-yellow-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Common symptoms</h3>
+                        <p class="text-gray-600">It may involve rapid eating, eating until uncomfortably full, eating alone out of shame, self-induced vomiting, and intense guilt afterwards.</p>
+                    </div>
+                    <!-- 卡片 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="inline-block bg-macaron-pink p-4 rounded-full mb-4">
+                            <svg class="w-10 h-10 text-pink-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Scientific understanding is the first step toward healing</h3>
+                        <p class="text-gray-600">Psychotherapy, nutritional counseling, and support groups are effective treatment options. You don't have to face this alone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Insights (Data-driven Discourse Section) -->
+        <section id="data-discourse" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Data Insights</h2>
+                    <p class="mt-2 text-gray-600">The data reveals the prevalence and impact of Binge Eating Disorder (BED).</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- 数据卡片 1: Prevalence -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-4">Lifetime prevalence</h3>
+                        <p class="text-5xl font-extrabold text-gray-700">2.8%</p>
+                        <p class="text-gray-500 mt-2">A significant percentage of adults will experience BED at some point in their lives — a rate even higher than that of breast cancer.</p>
+                    </div>
+                    <!-- 数据卡片 2: Gender distribution -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-4">Gender distribution</h3>
+                        <div class="relative w-full h-8 bg-gray-200 rounded-full overflow-hidden">
+                           <div class="data-bar absolute top-0 left-0 h-full bg-macaron-blue rounded-full" style="width: 60%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2 text-sm text-gray-600">
+                           <span>Female (≈60%)</span>
+                           <span>Male (≈40%)</span>
+                        </div>
+                        <p class="text-gray-500 mt-4">While BED affects people of all genders, it is more frequently reported among women.</p>
+                    </div>
+                    <!-- 数据卡片 3: Comorbidities -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-4">Comorbidities are common among individuals with Eating Disorder.</h3>
+                        <ul class="text-left space-y-2 text-gray-600">
+                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-green mr-3"></span>79% Have a history of depression.</li>
+                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-yellow mr-3"></span>49% Struggles with anxiety disorders.</li>
+                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-pink mr-3"></span>37% Struggles with other psychiatric disorders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Story Section -->
+        <section id="video-story" class="bg-macaron-pink py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Video Story</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                        This video combines experimental editing with linear storytelling to portray the experience of individuals with Eating Disorder. It explores one of the key triggers, body image anxiety, as a cause for binge episodes. The narrative also reveals common compensatory behaviours, such as self-induced purging, that often follow. By illustrating both the emotional buildup and the aftermath, the video aims to offer a deeper understanding of the psychological and physical toll ED can take.
+                    </p>
+                </div>
+                <div class="max-w-4xl mx-auto aspect-w-16 aspect-h-9 bg-black rounded-2xl shadow-lg overflow-hidden">
+                    <!-- Video Player Placeholder -->
+                    <!-- You can replace the `poster` with a video thumbnail and the `src` with your video file path -->
+                    <video class="w-full h-full object-cover" controls poster="https://placehold.co/1280x720/1e293b/ffffff?text=Video+Player">
+                       <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/VIDEO_ID"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- What we believe (Our Mission Section) -->
+        <section id="mission" class="bg-macaron-green py-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/a5b4fc/ffffff?text=Community+Support" class="rounded-2xl shadow-lg w-full" alt="Community support">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What we believe</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Echo of Star We're here to listen, not to fix. To hold space for healing, not judgment. Because no one should face Binge Eating Disorder alone.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        A quiet place to explore, learn, and feel supported. You're not expected to have it all figured out. Just come as you are.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Where insight meets care (Get Help Section) -->
+        <section id="help" class="bg-macaron-yellow py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Where insight meets care</h2>
+                    <p class="mt-2 text-gray-600">Take the first step — we're here to listen. (All fields are optional. You can remain anonymous.)</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Your name or nickname (optional)" class="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition">
+                            <input type="email" placeholder="Your email (to receive resources)" class="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="What’s on your mind? (You’re welcome to share anything you're struggling with, or what you'd like to know more about)" rows="5" class="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-indigo-300 focus:outline-none transition"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-macaron font-bold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform">
+                                Send your message
+                            </button>
+                        </div>
+                    </form>
+                    <div id="form-message" class="text-center mt-4 text-green-600 font-medium"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Echo of Star. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">The information provided on this site is for educational and supportive purposes only and is not a substitute for professional medical advice.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu after clicking a link
+        const mobileMenuItems = mobileMenu.getElementsByTagName('a');
+        for (let item of mobileMenuItems) {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Contact form submission feedback
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent default form submission
+            formMessage.textContent = 'We have received your message. Support and resources will be sent to your email.';
+            contactForm.reset();
+            setTimeout(() => {
+                formMessage.textContent = '';
+            }, 6000); // Clear message after 6 seconds
+        });
+    </script>
+</body>
+</html>
