@@ -64,7 +64,7 @@
                     <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48">
                         <a href="#prevalence" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Lifetime Prevalence</a>
                         <a href="#gender" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Gender Distribution</a>
-                        <a href="#comorbidities" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Comorbidities</a>
+                        <a href="#age" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Age Distribution</a>
                     </div>
                 </li>
                 <li><a href="#video-story" class="hover:text-indigo-500 transition-colors">Video Story</a></li>
@@ -81,7 +81,7 @@
             <a href="#data-insights-summary" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Data Insights</a>
             <a href="#prevalence" class="block py-2 text-center hover:bg-indigo-100 rounded-md pl-4">- Lifetime Prevalence</a>
             <a href="#gender" class="block py-2 text-center hover:bg-indigo-100 rounded-md pl-4">- Gender Distribution</a>
-            <a href="#comorbidities" class="block py-2 text-center hover:bg-indigo-100 rounded-md pl-4">- Comorbidities</a>
+            <a href="#age" class="block py-2 text-center hover:bg-indigo-100 rounded-md pl-4">- Age Distribution</a>
             <a href="#video-story" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Video Story</a>
             <a href="#mission" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Our Mission</a>
             <a href="#help" class="block py-2 text-center hover:bg-indigo-100 rounded-md">Need Help?</a>
@@ -158,38 +158,38 @@
                         <p class="text-gray-500 mt-4">BED affects people of all genders, though more frequently reported among women.</p>
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
-                        <h3 class="text-xl font-bold text-indigo-600 mb-4">Comorbidities</h3>
+                        <h3 class="text-xl font-bold text-indigo-600 mb-4">Age distribution</h3>
                         <ul class="text-left space-y-2 text-gray-600">
-                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-green mr-3"></span>High overlap with depression.</li>
-                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-yellow mr-3"></span>Often co-occurs with anxiety.</li>
-                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-pink mr-3"></span>Links to other psychiatric disorders.</li>
+                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-green mr-3"></span>Often begins in adolescence.</li>
+                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-yellow mr-3"></span>Recognized in mid-life adults.</li>
+                            <li class="flex items-center"><span class="w-4 h-4 rounded-full bg-macaron-pink mr-3"></span>Early intervention is key.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- START: 新增数据板块 -->
+    
         <section id="prevalence" class="bg-macaron-purple py-20">
-            <div class="container mx-auto px-6 h-[600px]">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Lifetime Prevalence</h2>
-                <iframe src="https://ourworldindata.org/grapher/eating-disorders-prevalence-by-age?tab=line&time=earliest..2021" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+            <div class="container mx-auto px-6 h-[660px]">
+                <iframe src="https://ourworldindata.org/grapher/eating-disorders-prevalence?tab=line&time=earliest..2021" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
                 <div class="text-center text-gray-600"></div>
             </div>
         </section>
 
         <section id="gender" class="bg-macaron-orange py-20">
-            <div class="container mx-auto px-6 h-96">
+            <div class="container mx-auto px-6 h-[660px]">
+                <iframe src="https://ourworldindata.org/grapher/eating-disorders-prevalence-males-vs-females?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Gender Distribution</h2>
 
                 <div class="text-center text-gray-600"></div>
             </div>
         </section>
 
-        <section id="comorbidities" class="bg-macaron-teal py-20">
-            <div class="container mx-auto px-6 h-96">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Comorbidities</h2>
-                
+        <section id="age distribution" class="bg-macaron-teal py-20">
+            <div class="container mx-auto px-6 h-[660px]">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Age Distribution</h2>
+                <iframe src="https://ourworldindata.org/grapher/eating-disorders-prevalence-by-age?tab=line&time=earliest..2021" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
                 <div class="text-center text-gray-600"></div>
             </div>
         </section>
